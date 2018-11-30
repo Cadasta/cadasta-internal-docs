@@ -1,0 +1,17 @@
+{
+  "root": "./src",
+  "title": "Cadasta Internal Documentation",
+  "description": "A collection of documents to assist Cadasta employees on how Cadasta operates.",
+  "plugins": ["insert-logo"],
+  "structure": {
+    "readme": "index.md",
+    "summary": "toc.md"
+  },
+  "pdf": {},
+  "pluginsConfig": {
+    "insert-logo": {
+      "url": "/assets/logo.png",
+      "style": "height: 20px;"
+    }
+  }
+}
