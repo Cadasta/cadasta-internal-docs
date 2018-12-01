@@ -10,7 +10,7 @@
   "pdf": {},
   "pluginsConfig": {
     "insert-logo": {
-      "url": "/assets/logo.png",
+      "url": "https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png",
       "style": "height: 20px;"
     },
     "edit-link": {
