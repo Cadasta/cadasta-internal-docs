@@ -2,7 +2,7 @@
   "root": "./src",
   "title": "Cadasta Internal Documentation",
   "description": "A collection of documents to assist Cadasta employees on how Cadasta operates.",
-  "plugins": ["insert-logo"],
+  "plugins": ["insert-logo", "edit-link"],
   "structure": {
     "readme": "index.md",
     "summary": "toc.md"
@@ -12,6 +12,14 @@
     "insert-logo": {
       "url": "/assets/logo.png",
       "style": "height: 20px;"
+    },
+    "edit-link": {
+      "base": "https://github.com/Cadasta/cadasta-internal-docs/edit/master/src",
+      "label": "Edit this page"
+    },
+    "github-edit": {
+      "repo": "Cadasta/cadasta-internal-docs",
+      "branch": "master"
     }
   }
 }

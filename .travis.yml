@@ -1,0 +1,20 @@
+language: generic
+env:
+  global:
+    # GITHUB_TOKEN
+    - secure: "q8PHLbvlk6OXtx8RL7fiWSq1sXF8ic3Nt7h6LLe5BsaN9YDK0Ci+FRePe0EtJ3x2nDFU4Mq+jcY7Al4eDgJqiI40TeC5dE7A0LmyY9MXdI5oiDTSjkSWipcXbjKwZFRmCzrov87rMe3mvxhzMYoJYvKo+f4VmrVsiwDQIbvvbGlW0Y9x7gUVNgqlvYbfg3Q0h+3O3MuGFi/4hyW1KZb3AVh1ut9LABgoGBkF69m2BVL0CmyVD/r2kW6gv2pH4QNO4bdck/i5G4gBnVYJsaaB9YDJIdDLFLW8/JdqETQSpYnz7D+J1oy9NIKLiI3HiDOrxjJJ75OGbFLnK6AOfKHJFyJ+OuIEBo4vQ5ICjhadAuFFXuQNQcIkK5jswcjkV3msoAphGxIjDeExjbC9pavT5PoMfaYFZKf7/6Hqi2+bDu/Bn4Pj1gIinqjkGzo8gHclf3bY7DbWIVqaSmbAkGr0RMINk3yEnb+YqlxkJGTl7SIY+NNbTtmpz3aaGiUXN4tqaGOWpz4xX+k8+us1CNt8mKyyx29nLUXjPjCQzIu3eqsONZi8ekZB18Gu3D0Bi4MK8TGEJaE8n6sapHG248GNIj9ihM0u6+VDe0elDk+5eJWYZ2eW3sGa/9OZ2+brYq+SopG3NcYp829sKifmhrDaPrx5K6qBgS+LM6GaZaGpJv8="
+jobs:
+  include:
+    - stage: deploy gitbook
+      if: branch = master AND type = push
+      script:
+        - npm install --only=dev --ignore-scripts
+        - npm run docs:build
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+        keep-history: true
+        local-dir: _book
+        on:
+          branch: master

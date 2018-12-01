@@ -1,0 +1,31 @@
+{
+  "name": "cadasta-internal-docs",
+  "version": "1.0.0",
+  "description": "## Development",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-insert-logo": "^0.1.5"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:prepare": "gitbook install",
+    "docs:serve": "npm run docs:prepare && gitbook serve .",
+    "docs:build": "npm run docs:prepare && gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cadasta/cadasta-internal-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cadasta/cadasta-internal-docs/issues"
+  },
+  "homepage": "https://github.com/Cadasta/cadasta-internal-docs#readme"
+}
