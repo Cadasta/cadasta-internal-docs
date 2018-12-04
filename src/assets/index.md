@@ -1,6 +1,6 @@
 # Cadasta Styles & Assets
 
-In an effort to simplify branding across Cadasta applications, commonly used assets are placed in the AWS S3 Bucket titled `assets.cadasta.org`. They are then available at `https://s3.amazonaws.com/assets.cadasta.org/<FILENAME>`.
+In an effort to simplify branding across Cadasta applications, commonly used assets are placed in the AWS S3 Bucket titled `assets.cadasta.org`. They are then available at `https://assets.cadasta.org/<FILENAME>`.
 
 ## Images
 
