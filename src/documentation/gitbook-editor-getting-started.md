@@ -15,7 +15,5 @@ Once installed, you will need to import this book's Git repository.
    2. Download the repository as a ZIP file.
       ![](/src/documentation/imgs/gh-download-repo.png)
    3. Extract the ZIP file in a temporary folder/directory on your machine \(e.g. your Downloads folder\).
-2. Import the repository into GitBook.![](/assets/Screen Shot 2018-12-04 at 7.06.06 AM.png)
-
-
-
+2. Import the repository into GitBook.
+   ![](/assets/Screen Shot 2018-12-04 at 7.06.06 AM.png)
