@@ -14,4 +14,7 @@ Once installed, you will need to import this book's Git repository.
    1. Navigate to the repository URL: [https://github.com/Cadasta/cadasta-internal-docs](https://github.com/Cadasta/cadasta-internal-docs)
    2. Download the repository as a ZIP file.
       ![](/src/documentation/imgs/gh-download-repo.png)
-   3. Extract the ZIP file in a stable folder/directory on your machine (e.g. your Documents folder).
+   3. Extract the ZIP file in a temporary folder/directory on your machine \(e.g. your Downloads folder\).
+
+
+
