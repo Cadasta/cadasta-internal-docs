@@ -17,7 +17,19 @@ Once installed, you will need to import this book's Git repository.
    3. Extract the ZIP file in a temporary folder/directory on your machine \(e.g. your Downloads folder\).
 2. Import the repository into GitBook.
    ![](/src/documentation/imgs/gb-import.png)
+3. Sync GitBook with GitHub
+   1. Instruct GitBook to sync
+      ![](/src/documentation/imgs/gb-sync-book.png)
 
+   2. Provide GitHub Username  
+      ![](/src/documentation/imgs/gb-github-auth.png)
+
+   3. foo
+
+   4. bar
+
+   1. Bar
+4. 
 ## Uploading Chages
 
 
