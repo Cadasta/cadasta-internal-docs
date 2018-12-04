@@ -17,7 +17,7 @@ All documentation content is stored in GitHub. Regardless of method, to make cha
 
 The [GitBook Editor](https://legacy.gitbook.com/editor) simplifies the process of editing content if you are not familiar with Markdown.
 
-Read more about setting up GitBook [here](gitbook-editor-gettings-started.md).
+Read more about setting up GitBook [here](gitbook-editor-getting-started.md).
 
 ## Deploying Changes
 
