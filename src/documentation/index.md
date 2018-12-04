@@ -17,8 +17,6 @@ All documentation content is stored in GitHub. Regardless of method, to make cha
 
 The [GitBook Editor](https://legacy.gitbook.com/editor) simplifies the process of editing content if you are not familiar with Markdown.
 
-_Note: If your GitHub account is configured with 2-factor authentication, then you will need to authenticate with GitHub from GitBook with a GitHub personal access token. Read more [here](https://github.com/GitbookIO/feedback/issues/133#issuecomment-243284698)._
-
 ## Deploying Changes
 
 Being that this content is all managed via Git/GitHub, we follow [standard best practices](https://guides.github.com/introduction/flow/) with code management:
