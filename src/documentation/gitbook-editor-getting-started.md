@@ -17,6 +17,6 @@ Once installed, you will need to import this book's Git repository.
    3. Extract the ZIP file in a temporary folder/directory on your machine \(e.g. your Downloads folder\).
 2. Import the repository into GitBook.
    ![](/src/documentation/imgs/gb-import.png)
-
+3. 
 
 
