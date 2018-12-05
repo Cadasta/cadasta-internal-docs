@@ -1,6 +1,6 @@
 # Glossary
 
-Terms defined in this document will appear as annotations when used within our documentation,
+Terms defined in this document will appear as annotations when used within our documentation. 
 
 ## Markdown
 
