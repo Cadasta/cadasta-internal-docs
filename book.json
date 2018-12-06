@@ -10,8 +10,7 @@
   "pdf": {},
   "pluginsConfig": {
     "insert-logo": {
-      "url": "https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png",
-      "style": "height: 20px;"
+      "url": "https://s3.amazonaws.com/assets.cadasta.org/logo/Color_Logo/Rectangular/logo_color_200x71/logo_color_200x71.png"
     },
     "edit-link": {
       "base": "https://github.com/Cadasta/cadasta-internal-docs/edit/master/src",
