@@ -7,6 +7,14 @@ Information about the inner-workings of GitBook can be found in the [GitBook Too
 - [Support for multiple languages](https://toolchain.gitbook.com/languages.html)
 - [Generating eBooks and PDFs](https://toolchain.gitbook.com/ebook.html)
 
+## File Layout
+
+The layout of Cadasta's documentation differs slighhtly from the standard GitBook layout. All content is located in the `src` directory. Key files are:
+
+* `src/index.md`: The preface / introduction for our documentation (traditionally, this is named `README.md`).
+* `src/toc.md`: The table of contents for our documentation (traditionally, this is named `SUMMARY.md`, see Gitbook's [Pages documentation](https://toolchain.gitbook.com/pages.html#summary) for more information).
+* `src/glossary.md`: The preface / introduction for our documentation (traditionally, this is named `README.md`, see Gitbook's [Glossary documentation](https://toolchain.gitbook.com/lexicon.html) for more information).
+
 ## Editing
 
 All documentation content is written in Markdown and can be edited in any standard text editor or the GitBook Editor.
