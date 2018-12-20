@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Styles & Assets · Cadasta Internal Documentation</title>
+        <title>Collector to Survey123 workflow · Cadasta Internal Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -63,10 +63,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../glossary.html" />
+    <link rel="next" href="../troubleshooting.html" />
     
-    
-    <link rel="prev" href="../troubleshooting.html" />
     
 
     </head>
@@ -154,9 +152,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../workflows/collector-to-survey123-workflow.html">
+        <li class="chapter active" data-level="1.2.1" data-path="collector-to-survey123-workflow.html">
             
-                <a href="../workflows/collector-to-survey123-workflow.html">
+                <a href="collector-to-survey123-workflow.html">
             
                     
                     Collector to Survey123 workflow
@@ -185,9 +183,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../assets/">
             
-                <a href="./">
+                <a href="../assets/">
             
                     
                     Styles & Assets
@@ -241,7 +239,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Styles & Assets</a>
+        <a href=".." >Collector to Survey123 workflow</a>
     </h1>
 </div>
 
@@ -256,26 +254,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cadasta-styles--assets">Cadasta Styles &amp; Assets</h1>
-<p>In an effort to simplify branding across Cadasta applications, commonly used assets are placed in the AWS S3 Bucket titled <code>assets.cadasta.org</code>. They are then available at <code>https://s3.amazonaws.com/assets.cadasta.org/&lt;FILENAME&gt;</code>.</p>
-<h2 id="images">Images</h2>
-<h3 id="logos">Logos</h3>
-<h4 id="large-transparent-background">Large, transparent background</h4>
-<p><img src="https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png" alt=""></p>
-<pre><code>https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png
-</code></pre><h3 id="colors">Colors</h3>
-<h4 id="cadasta-light-green">Cadasta Light Green</h4>
-<div style="background-color: #00b288;" class="color-box"></div>
-
-<p><code>#00b288</code></p>
-<h4 id="cadasta-light-blue">Cadasta Light Blue</h4>
-<div style="background-color: #2f51a2;" class="color-box"></div>
-
-<p><code>#2f51a2</code></p>
-<h4 id="cadasta-dark-blue">Cadasta Dark Blue</h4>
-<div style="background-color: #1b325d;" class="color-box"></div>
-
-<p><code>#1b325d</code></p>
+                                <h1 id="collector-to-survey123-workflow">Collector to Survey123 workflow</h1>
+<h2 id="limitations">Limitations</h2>
+<p>This workflow cannot be used with Cadasta Surveys, our white-labeled version of Survey123. Collector for ArcGIS does not allow to link outside of an ArcGIS product. The link starting with <code>cadastasurveys://</code> will not work the same way as a link starting with <code>arcgis-survey123://</code>). Hence, we won&apos;t be able to link to Cadasta Surveys to complete the form after the polygon is collected. The issue has been <a href="https://my.esri.com/#/support/cases/02229327" target="_blank">confirmed with a ESRI representative</a>. </p>
 
                                 
                                 </section>
@@ -303,12 +284,8 @@
 
             
                 
-                <a href="../troubleshooting.html" class="navigation navigation-prev " aria-label="Previous page: Troubleshooting">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="../glossary.html" class="navigation navigation-next " aria-label="Next page: Glossary">
+                <a href="../troubleshooting.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Troubleshooting">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -319,7 +296,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Styles & Assets","level":"1.4","depth":1,"next":{"title":"Glossary","level":"1.5","depth":1,"path":"glossary.md","ref":"glossary.md","articles":[]},"previous":{"title":"Troubleshooting","level":"1.3","depth":1,"path":"troubleshooting.md","ref":"troubleshooting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","edit-link"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"Cadasta/cadasta-internal-docs","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit this page","base":"https://github.com/Cadasta/cadasta-internal-docs/edit/master/src"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"height: 20px;","url":"https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"toc.md"},"variables":{},"title":"Cadasta Internal Documentation","gitbook":"*","description":"A collection of documents to assist Cadasta employees on how Cadasta operates."},"file":{"path":"assets/index.md","mtime":"2018-12-20T08:02:50.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-20T08:03:45.174Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Collector to Survey123 workflow","level":"1.2.1","depth":2,"next":{"title":"Troubleshooting","level":"1.3","depth":1,"path":"troubleshooting.md","ref":"troubleshooting.md","articles":[]},"previous":{"title":"Workflows","level":"1.2","depth":1,"ref":"","articles":[{"title":"Collector to Survey123 workflow","level":"1.2.1","depth":2,"path":"workflows/collector-to-survey123-workflow.md","ref":"workflows/collector-to-survey123-workflow.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["insert-logo","edit-link"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"Cadasta/cadasta-internal-docs","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit this page","base":"https://github.com/Cadasta/cadasta-internal-docs/edit/master/src"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"height: 20px;","url":"https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"toc.md"},"variables":{},"title":"Cadasta Internal Documentation","gitbook":"*","description":"A collection of documents to assist Cadasta employees on how Cadasta operates."},"file":{"path":"workflows/collector-to-survey123-workflow.md","mtime":"2018-12-20T08:02:50.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-20T08:03:45.174Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
