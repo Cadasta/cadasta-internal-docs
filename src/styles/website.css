@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,900");
+@font-face {
+  font-family: Steelfish-Regular;
+  src: url("https://assets.cadasta.org/fonts/steelfish-rg.ttf");
+}
+
 .page-inner img {
   border: 1px solid #ddd !important;
 }
@@ -11,13 +17,4 @@ figure.swatch-wrap {
   border: 1px solid #ccc;
   width: 100px;
   height: 100px;
-}
-
-@font-face {
-  font-family: Roboto, san-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:300,300i,900");
-}
-@font-face {
-  font-family: Steelfish-Regular;
-  src: url("https://s3.amazonaws.com/assets.cadasta.org/fonts/steelfish-rg.ttf");
 }

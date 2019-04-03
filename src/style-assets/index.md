@@ -1,6 +1,6 @@
 # Cadasta Styles & Assets
 
-In an effort to simplify branding across Cadasta applications, commonly used assets are placed in the AWS S3 Bucket titled `assets.cadasta.org`. They are then available at `https://s3.amazonaws.com/assets.cadasta.org/<FILENAME>`.
+In an effort to simplify branding across Cadasta applications, commonly used assets are placed in the AWS S3 Bucket titled `assets.cadasta.org`. They are then available at `https://assets.cadasta.org/<FILENAME>`.
 
 ## Images
 
@@ -8,10 +8,10 @@ In an effort to simplify branding across Cadasta applications, commonly used ass
 
 #### Large, transparent background
 
-![](https://s3.amazonaws.com/assets.cadasta.org/logo/Color_Logo/Rectangular/logo_color_200x71/logo_color_200x71.png)
+![](https://assets.cadasta.org/logo/Color_Logo/Rectangular/logo_color_200x71/logo_color_200x71.png)
 
 ```
-https://s3.amazonaws.com/assets.cadasta.org/logo/Color_Logo/Rectangular/logo_color_200x71/logo_color_200x71.png
+https://assets.cadasta.org/logo/Color_Logo/Rectangular/logo_color_200x71/logo_color_200x71.png
 ```
 
 ## Color Palette
@@ -128,7 +128,7 @@ Use all caps (consider utilizing `text-transform: uppercase;` in the CSS).
 ```css
 @font-face {
   font-family: Steelfish-Regular;
-  src: url("https://s3.amazonaws.com/assets.cadasta.org/fonts/steelfish-rg.ttf");
+  src: url("https://assets.cadasta.org/fonts/steelfish-rg.ttf");
 }
 
 font-family: Steelfish-Regular;
