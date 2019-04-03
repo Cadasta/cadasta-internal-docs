@@ -4,7 +4,7 @@
   "description": "## Development",
   "main": "index.js",
   "dependencies": {
-    "gitbook": "^2.6.9",
+    "gitbook": "^3.2.3",
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-github": "^2.0.0",
     "gitbook-plugin-insert-logo": "^0.1.5"
