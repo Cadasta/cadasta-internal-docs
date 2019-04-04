@@ -1,0 +1,560 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Cadasta Portal + Auth0 SAML Provider · Cadasta Internal Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../troubleshooting.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../documentation/">
+            
+                <a href="../documentation/">
+            
+                    
+                    Documentation System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../documentation/gitbook-editor-getting-started.html">
+            
+                <a href="../documentation/gitbook-editor-getting-started.html">
+            
+                    
+                    Gitbook Editor - Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Workflows
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../workflows/collector-to-survey123-workflow.html">
+            
+                <a href="../workflows/collector-to-survey123-workflow.html">
+            
+                    
+                    Collector to Survey123 workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    System Administration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="portal-auth0.html">
+            
+                <a href="portal-auth0.html">
+            
+                    
+                    Cadasta Portal + Auth0 SAML Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../troubleshooting.html">
+            
+                <a href="../troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../assets/">
+            
+                <a href="../assets/">
+            
+                    
+                    Styles & Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../glossary.html">
+            
+                <a href="../glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Cadasta Portal + Auth0 SAML Provider</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cadasta-portal--auth0-saml-provider">Cadasta Portal + Auth0 SAML Provider</h1>
+<h2 id="questions">Questions</h2>
+<ol>
+<li><p>How to make usernames in Esri Portal more understandable?</p>
+<ul>
+<li><p>We have access to the following JSON data about a user from Auth0:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;alukach@cadasta.org&quot;</span>,
+  <span class="hljs-string">&quot;email_verified&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Anthony Lukach&quot;</span>,
+  <span class="hljs-string">&quot;given_name&quot;</span>: <span class="hljs-string">&quot;Anthony&quot;</span>,
+  <span class="hljs-string">&quot;family_name&quot;</span>: <span class="hljs-string">&quot;Lukach&quot;</span>,
+  <span class="hljs-string">&quot;picture&quot;</span>: <span class="hljs-string">&quot;https://lh4.googleusercontent.com/-aVUQK8kaA8w/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-gzZtcbaChKG9lQI9T2LZ0xKAJ-UA/mo/photo.jpg&quot;</span>,
+  <span class="hljs-string">&quot;locale&quot;</span>: <span class="hljs-string">&quot;en&quot;</span>,
+  <span class="hljs-string">&quot;updated_at&quot;</span>: <span class="hljs-string">&quot;2018-12-12T04:06:37.077Z&quot;</span>,
+  <span class="hljs-string">&quot;user_id&quot;</span>: <span class="hljs-string">&quot;google-oauth2|110664703776792306122&quot;</span>,
+  <span class="hljs-string">&quot;nickname&quot;</span>: <span class="hljs-string">&quot;alukach&quot;</span>,
+  <span class="hljs-string">&quot;identities&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;provider&quot;</span>: <span class="hljs-string">&quot;google-oauth2&quot;</span>,
+      <span class="hljs-string">&quot;user_id&quot;</span>: <span class="hljs-string">&quot;110664703776792306122&quot;</span>,
+      <span class="hljs-string">&quot;connection&quot;</span>: <span class="hljs-string">&quot;google-oauth2&quot;</span>,
+      <span class="hljs-string">&quot;isSocial&quot;</span>: <span class="hljs-literal">true</span>
+    }
+  ],
+  <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-string">&quot;2018-12-06T18:31:38.860Z&quot;</span>,
+  <span class="hljs-string">&quot;last_ip&quot;</span>: <span class="hljs-string">&quot;174.0.105.153&quot;</span>,
+  <span class="hljs-string">&quot;last_login&quot;</span>: <span class="hljs-string">&quot;2018-12-12T04:06:37.077Z&quot;</span>,
+  <span class="hljs-string">&quot;logins_count&quot;</span>: <span class="hljs-number">15</span>,
+  <span class="hljs-string">&quot;blocked_for&quot;</span>: [],
+  <span class="hljs-string">&quot;guardian_authenticators&quot;</span>: []
+}
+</code></pre>
+<p>We can inject this data as SAML attributes with the following rule:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user, context, callback</span>) </span>{
+  context.samlConfiguration.mappings = {
+    <span class="hljs-string">&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier&quot;</span>: <span class="hljs-string">&quot;email&quot;</span>,
+    <span class="hljs-string">&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress&quot;</span>: <span class="hljs-string">&quot;email&quot;</span>,
+    <span class="hljs-string">&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname&quot;</span>: <span class="hljs-string">&quot;given_name&quot;</span>,
+    <span class="hljs-comment">// &quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name&quot;: &quot;name&quot;,</span>
+    <span class="hljs-comment">// &quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname&quot;: &quot;family_name&quot;,</span>
+
+    <span class="hljs-comment">// Ensure app_metadata</span>
+    <span class="hljs-string">&quot;Groups&quot;</span>: <span class="hljs-string">&quot;app_metadata.groups&quot;</span>
+  };
+
+  callback(<span class="hljs-literal">null</span>, user, context);
+}
+</code></pre>
+<p>More information about this technique <a href="https://auth0.com/rules/saml-configuration" target="_blank">found here</a>.</p>
+<p>It seems that this method only works for setting the <code>nameidentifier</code>, <code>emailaddress</code>, and <code>givenname</code> (first name). Despite <code>surname</code> being a standard claim in the schema used (<a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/technical-reference/the-role-of-claims" target="_blank">source</a>), Esri does not seem to respect it. From <a href="http://enterprise.arcgis.com/en/portal/latest/administer/linux/configuring-a-saml-compliant-identity-provider-with-your-portal.htm#ESRI_CHOICE_6AFAFAE20E704D498915543DC2B3B8BD" target="_blank">the Esri docs on configuring a SAML IdP</a>:</p>
+<blockquote>
+<p><strong>Update profiles on sign in</strong>&#x2014;Select this option to have Portal for ArcGIS update users&apos; <code>givenName</code> and <code>email address</code> attributes if they have changed since their last login. This is selected by default.</p>
+</blockquote>
+<p>Perhaps, as <em>somewhat</em> described, only <code>givenName</code> and <code>email_address</code> support being set.</p>
+</li>
+</ul>
+</li>
+<li><p>How do we create users ahead of time that are assigned to a group? (e.g. Create 10 users, those users are already associated w/ groups on first login)</p>
+<ul>
+<li><strong>Option 1</strong>: Invite as normal. It&apos;s critical that the <strong>username must match the username sent by Auth0, which will be the user&apos;s email address</strong>.</li>
+<li><strong>Option 2</strong>: This can be achieved by setting the &quot;Enable SAML based group membership&quot; option of the Esri Portal&apos;s SAML provider to <code>true</code>. When enabled, Groups within the Portal have a new &quot;Who can join this group?&quot; option: &quot;Members of an enterprise group&quot;. When this option is selected, a prompt appears for the &quot;Enterprise Group Name&quot;. If a SAML-based user has this group assigned to it, that user will automatically be able to view that group under their &quot;My Organization&apos;s Groups&quot; tab of the Groups view. This places automatic group sharing within the domain of Auth0 rather than the Esri Portal. This seems to be a large flaw in this solution, in that it will require us to do one of the following:<ul>
+<li>Build external tooling to allow a Project Manager to assign users to groups (within Auth0). User creation can be performed by the <a href="https://auth0.com/docs/api/management/v2#Users_post_users" target="_blank">Auth0 Management API</a>. This comes with some challenges:<ul>
+<li>How do we ensure that the Project Manager can only see users that belong to their organization (i.e. if they are to assign a user to a group, they must first see the users from their organization). <em>Idea:</em> Users should have a <code>tenant</code> property within Auth0, describing to which org(s) they have access. Perhaps designation of this user-creating permission should occur in Auth0 rather than Portal, to keep logic more consolidated within Auth0.</li>
+<li>How do we handle situations where users don&apos;t exist when the group is set up? <em>Idea:</em> A Project Manager must be able to create a user and then add that user to the desired group.</li>
+</ul>
+</li>
+<li>Have all user management and group assignment operations handled by the Cadasta Programs team. <em>Idea:</em> This could be a stop-gap until user management tooling is developed and delivered to partners.</li>
+</ul>
+</li>
+<li><p>Notes about passing Group data from Auth0 to Esri Portal:</p>
+<ul>
+<li><blockquote>
+<p>To link enterprise groups from a SAML-based IDP to new groups created in your portal, check the Enable SAML based group membership box when setting your IDP in the portal&apos;s settings. To link an enterprise group, you must enter the name of the group exactly as it will be returned in the IDP&apos;s SAML assertion response when creating your new group in the ArcGIS Enterprise portal. The Search for Group option is not available when Enable SAML based group membership is selected.</p>
+<p>The supported (case-insensitive) names for the attribute defining a user&apos;s group membership are: Group, Groups, Roles, MemberOf, member-of, <a href="http://schemas.xmlsoap.org/claims/Group" target="_blank">http://schemas.xmlsoap.org/claims/Group</a>, urn:oid:1.3.6.1.4.1.5923.1.5.1.1, and urn:oid:2.16.840.1.113719.1.1.4.1.25.</p>
+<p><a href="https://enterprise.arcgis.com/en/portal/latest/administer/windows/create-groups.htm#ESRI_SECTION2_26F44DE88AD84BCCBFCA47C59FBB941F" target="_blank">source</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<pre><code>      - &gt; [Y]ou can provide metadata to the portal about the enterprise groups in your identity store. This allows you to create groups in the portal that leverage the existing enterprise groups in your identity store. When members log in to the portal, access to content, items, and data is controlled by the membership rules defined in the enterprise group. If you do not provide the necessary enterprise group metadata, you can still create groups. However, membership rules will be controlled by your ArcGIS Enterprise portal, not your identity store. - [source](https://enterprise.arcgis.com/en/portal/latest/administer/linux/configuring-a-saml-compliant-identity-provider-with-your-portal.htm#GUID-ED700718-8CEE-4168-B3BF-739EB3D6367C)
+
+        [Directions](https://enterprise.arcgis.com/en/portal/latest/administer/windows/create-groups.htm#ESRI_SECTION1_5E3FFFAA1B7E443FBB1E483E070B1979)
+</code></pre><ol>
+<li>How do we switch off user sign-up?<ul>
+<li>This can be done by unchecking the &quot;Allow users to create new built-in accounts&quot; option under the &quot;<a href="https://maps.cadasta.org/arcgis/home/organization.html#" target="_blank">Organization</a> &gt; Edit Settings &gt; Security &gt; Policies&quot; configurations.</li>
+</ul>
+</li>
+<li><p>How can we access the Cadasta Portal via scripting tool if we can only authenticate via Auth0?</p>
+<ul>
+<li>Machine to Machine<ul>
+<li><em>Less Ideal</em>: Username / Password<ul>
+<li>Use a built-in user for any scripting needs, authenticate in the same manner as we do today</li>
+</ul>
+</li>
+<li><em>More Ideal</em>: Use OAuth <code>client_id</code> and <code>client_secret</code> to get token<ul>
+<li>Utilize OAuth 2.0 to grant permissions to the Cadasta Portal (<a href="https://developers.arcgis.com/documentation/core-concepts/security-and-authentication/#auth-oauth" target="_blank">details</a>, <a href="https://developers.arcgis.com/documentation/core-concepts/security-and-authentication/arcgis-server-and-portal-for-arcgis/#version-103-and-later" target="_blank">more</a>)</li>
+<li>Some supported way to authenticate a script with the Cadasta Portal via SAML? Not sure if this exists. Possibly related:<ul>
+<li><a href="https://github.com/DOI-BLM/requests-arcgis-auth" target="_blank">https://github.com/DOI-BLM/requests-arcgis-auth</a></li>
+<li><a href="https://github.com/Esri/ago-assistant/issues/115" target="_blank">https://github.com/Esri/ago-assistant/issues/115</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>User login<ul>
+<li>Need to build a demo to allow user to login via Auth0, get token from Portal, and then use portal</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Can we allow a user to login either both Google or a provider user/pass?</p>
+<ul>
+<li>Seems like it. <strong>To be researched later</strong> Potential solutions:<ul>
+<li><a href="https://auth0.com/docs/link-accounts" target="_blank">Linking User Accounts
+</a></li>
+<li><a href="https://auth0.com/blog/consolidating-multiple-identity-sources-with-auth0/" target="_blank">Consolidating Multiple Identity Sources with Auth0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Can we port existing users to the Auth0 IDP?</p>
+<ul>
+<li>We can&apos;t No. The way in which users from Auth0 are associated with a user in Esri Portal is by their username. As such, if we wanted to move an existing user from Esri Portal login to Auth0, we would need to ensure that the username provided by Auth0 matches their username in Esri Portal. Through Auth0&apos;s Rules, we can alter the username sent to the Esri Portal from Auth0. Even if the username matches an existing built-in user, it seems that Esri Portal attempts to create a new user and throws an error due to the conflicting username. There is no way to modify a user from a built-in user to a SAML auth user (according to Travis Butcher via Slack).</li>
+<li><p>But, we can create new users to make the experience seamless for the end user. To do this, we would write a script to:</p>
+<ol>
+<li>List all existing built-in users.</li>
+<li>Create new, enterprise SAML user (in Portal) for that user.</li>
+<li>Optional: We could go ahead and create Auth0 users at this point as well. This may not make sense though, as we would likely want to allow our users to control how they authenticate (Google, Twitter, etc) and we may be required to make that assumption when creating a user (not totally sure).</li>
+<li>Transfer all contents and groups from old user to new user. (<a href="https://developers.arcgis.com/python/sample-notebooks/move-existing-user-content-to-a-new-user/" target="_blank">example</a>)</li>
+<li>De-activate or delete old user.</li>
+</ol>
+<p>Once this script has run, we should turn off named-user sign-ins (unless they are needed for scripting solutions, in whihch case we should ensure that users understand that they should be logging in via the SAML login by renaming the button to something appropriate).</p>
+</li>
+<li><p>Some potential solutions that I earlier thought would help but don&apos;t:</p>
+<ul>
+<li><a href="https://auth0.com/docs/users/migrations/bulk-import" target="_blank">Bulk User Imports with the Management API</a></li>
+<li><a href="http://enterprise.arcgis.com/en/portal/latest/administer/linux/add-members-to-your-portal.htm#ESRI_SECTION2_D274839C22254F74BD2847DB38CA97FD" target="_blank">Esri Docs: Add SAML-based enterprise accounts</a></li>
+<li><blockquote>
+<p>When creating a user for a SAML-based account, the user name &quot;must match the existing enterprise user and format defined in the SAML identity provider (for example, jcho11). If the user name does not match, the account will be created in the portal but cannot be used. Verify the user name is correct before proceeding.&quot;</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="steps-taken">Steps Taken</h2>
+<ol>
+<li>Setup Auth0 to act as a SAML provider: <a href="https://auth0.com/docs/protocols/saml/saml-idp-generic" target="_blank">[link]</a></li>
+<li>Setup Esri Portal to utilize Auth0&apos;s SAML provider: <a href="https://enterprise.arcgis.com/en/portal/10.6/administer/linux/configuring-a-saml-compliant-identity-provider-with-your-portal.htm#GUID-0AFD5CF7-AFDF-4682-A604-A24B0C8875D6" target="_blank">[link]</a>. At time of writing, the advanced settings are configured as:<ul>
+<li>Your users will be able to join: <code>After you add the accounts to the portal</code> (this stipulates that even if a user has an Auth0 user, they won&apos;t be able to access the portal unless a user is manually created for them on the portal)</li>
+<li>Encrypt Assertion: <code>true</code></li>
+<li>Enable Signed Request: <code>true</code><ul>
+<li>Sign using SHA256: <code>false</code></li>
+</ul>
+</li>
+<li>Propagate logout to Identity Provider: <code>false</code> (this doesn&apos;t seem to work, causing logout to redirect to a bad endpoint, but would be good to figure out how to make work)</li>
+<li>Update profiles on sign in: <code>true</code></li>
+<li>Enable SAML based group membership: <code>true</code></li>
+</ul>
+</li>
+<li><p>Add the following &quot;SAML Attributes Mapping&quot; rule to Auth0:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user, context, callback</span>) </span>{
+  context.samlConfiguration.mappings = {
+     <span class="hljs-string">&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier&quot;</span>: <span class="hljs-string">&quot;user_id&quot;</span>,
+     <span class="hljs-string">&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress&quot;</span>: <span class="hljs-string">&quot;email&quot;</span>,
+     <span class="hljs-string">&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name&quot;</span>: <span class="hljs-string">&quot;name&quot;</span>,
+     <span class="hljs-string">&quot;Groups&quot;</span>: <span class="hljs-string">&quot;app_metadata.groups&quot;</span>
+  };
+
+  callback(<span class="hljs-literal">null</span>, user, context);
+}
+</code></pre>
+</li>
+<li><p>Now, we can add the following <code>app_metadata</code> to the user to specify the groups that they are automatically added to:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;groups&quot;</span>: [<span class="hljs-string">&quot;myGroup&quot;</span>]
+}
+</code></pre>
+</li>
+</ol>
+<h2 id="saml-background">SAML Background</h2>
+<ul>
+<li><a href="https://auth0.com/blog/how-saml-authentication-works/" target="_blank">An intro to SAML</a><ul>
+<li>Auth0 is operating as the &quot;Identity Provider&quot;</li>
+<li>Esri Portal is operating as the &quot;Service Provider&quot;</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../troubleshooting.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Troubleshooting">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cadasta Portal + Auth0 SAML Provider","level":"1.5.1","depth":2,"next":{"title":"Troubleshooting","level":"1.6","depth":1,"path":"troubleshooting.md","ref":"troubleshooting.md","articles":[]},"previous":{"title":"System Administration","level":"1.5","depth":1,"ref":"","articles":[{"title":"Cadasta Portal + Auth0 SAML Provider","level":"1.5.1","depth":2,"path":"sys-admin/portal-auth0.md","ref":"sys-admin/portal-auth0.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["insert-logo","edit-link"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"Cadasta/cadasta-internal-docs","branch":"master"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit this page","base":"https://github.com/Cadasta/cadasta-internal-docs/edit/master/src"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://s3.amazonaws.com/assets.cadasta.org/cadasta-logo.png","style":"height: 20px;"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"toc.md"},"variables":{},"title":"Cadasta Internal Documentation","gitbook":"*","description":"A collection of documents to assist Cadasta employees on how Cadasta operates."},"file":{"path":"sys-admin/portal-auth0.md","mtime":"2019-04-04T16:57:42.459Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-04T16:58:43.774Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
