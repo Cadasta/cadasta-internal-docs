@@ -8,7 +8,7 @@ jobs:
     - stage: deploy gitbook
       if: branch = master AND type = push
       script:
-        - npm install --only=dev --ignore-scripts
+        - npm install --ignore-scripts
         - npm run docs:build
       deploy:
         provider: pages
