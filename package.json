@@ -8,7 +8,8 @@
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-github": "^2.0.0",
     "gitbook-plugin-insert-logo": "^0.1.5",
-    "lodash": "^4.17.14"
+    "lodash": "^4.17.14",
+    "open": "^6.4.0"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2"
