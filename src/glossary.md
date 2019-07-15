@@ -1,10 +1,6 @@
 # Glossary
 
-<<<<<<< HEAD
 Terms defined in this document will appear as annotations when used within our documentation. 
-=======
-Terms defined in this document will appear as annotations when used within our documentation,
->>>>>>> 96b9695... Track 1 files into repository.
 
 ## Markdown
 
