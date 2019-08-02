@@ -1,20 +1,20 @@
 language: generic
 env:
   global:
-    # GITHUB_TOKEN
-    - secure: "q8PHLbvlk6OXtx8RL7fiWSq1sXF8ic3Nt7h6LLe5BsaN9YDK0Ci+FRePe0EtJ3x2nDFU4Mq+jcY7Al4eDgJqiI40TeC5dE7A0LmyY9MXdI5oiDTSjkSWipcXbjKwZFRmCzrov87rMe3mvxhzMYoJYvKo+f4VmrVsiwDQIbvvbGlW0Y9x7gUVNgqlvYbfg3Q0h+3O3MuGFi/4hyW1KZb3AVh1ut9LABgoGBkF69m2BVL0CmyVD/r2kW6gv2pH4QNO4bdck/i5G4gBnVYJsaaB9YDJIdDLFLW8/JdqETQSpYnz7D+J1oy9NIKLiI3HiDOrxjJJ75OGbFLnK6AOfKHJFyJ+OuIEBo4vQ5ICjhadAuFFXuQNQcIkK5jswcjkV3msoAphGxIjDeExjbC9pavT5PoMfaYFZKf7/6Hqi2+bDu/Bn4Pj1gIinqjkGzo8gHclf3bY7DbWIVqaSmbAkGr0RMINk3yEnb+YqlxkJGTl7SIY+NNbTtmpz3aaGiUXN4tqaGOWpz4xX+k8+us1CNt8mKyyx29nLUXjPjCQzIu3eqsONZi8ekZB18Gu3D0Bi4MK8TGEJaE8n6sapHG248GNIj9ihM0u6+VDe0elDk+5eJWYZ2eW3sGa/9OZ2+brYq+SopG3NcYp829sKifmhrDaPrx5K6qBgS+LM6GaZaGpJv8="
+  - secure: q8PHLbvlk6OXtx8RL7fiWSq1sXF8ic3Nt7h6LLe5BsaN9YDK0Ci+FRePe0EtJ3x2nDFU4Mq+jcY7Al4eDgJqiI40TeC5dE7A0LmyY9MXdI5oiDTSjkSWipcXbjKwZFRmCzrov87rMe3mvxhzMYoJYvKo+f4VmrVsiwDQIbvvbGlW0Y9x7gUVNgqlvYbfg3Q0h+3O3MuGFi/4hyW1KZb3AVh1ut9LABgoGBkF69m2BVL0CmyVD/r2kW6gv2pH4QNO4bdck/i5G4gBnVYJsaaB9YDJIdDLFLW8/JdqETQSpYnz7D+J1oy9NIKLiI3HiDOrxjJJ75OGbFLnK6AOfKHJFyJ+OuIEBo4vQ5ICjhadAuFFXuQNQcIkK5jswcjkV3msoAphGxIjDeExjbC9pavT5PoMfaYFZKf7/6Hqi2+bDu/Bn4Pj1gIinqjkGzo8gHclf3bY7DbWIVqaSmbAkGr0RMINk3yEnb+YqlxkJGTl7SIY+NNbTtmpz3aaGiUXN4tqaGOWpz4xX+k8+us1CNt8mKyyx29nLUXjPjCQzIu3eqsONZi8ekZB18Gu3D0Bi4MK8TGEJaE8n6sapHG248GNIj9ihM0u6+VDe0elDk+5eJWYZ2eW3sGa/9OZ2+brYq+SopG3NcYp829sKifmhrDaPrx5K6qBgS+LM6GaZaGpJv8=
+  - secure: KEU2NFeqbMdTUobgLZOJyOgEuf8faJSq0uGbfoRXMi7XJLtSJNFmD8UyhANgRu4uEgPyFJiUymTcpO6eV46ZOoeBF87R53EyJdSQk88MzEIYYFzzjHlsJBZTFmb2t/hUnzq6YlOoEQd5DJ5jlVfVTHKVWhIQrl3/wLbbzZP+8M3uCuc75YZHtxcYafoIKipM/cMglwBscQmRE/l6H8lMhJihhMp4DoshkBgdBBWDk05P2NIC8YH0SvJlzfN8YqFDXQjMwHvwhUCzfzAPYNhJezXNwGQfSTmU2LtlFIhFcA1sp81liHonR0bP+AO+TzCBNcBLqPQuxmEi1obRVQfFRBlrTlBiO4hfJHNAXyT4/eMdzwLMopjyYZusMdI1pBOdivwOs1EfT4YBkjnjSGAumj65yju2h8AhcZvmU1mglEdaqKEDhm63mLiGbp1nVzuyNNZiarUHjBbDNpOsHyiyPCfYFW7yNPDJK2OUu7xaGlaz7kiNHxcwT+sYzabACa1PcHHGpzQaI7wdBk6NlkjnZuocPGZOMFeBFkAZyR2wBAxtTcXgLq72dR6flty7dmuKCoUreLKv0vUZVYGRif/aVpgTHh1wt/dXESCj82v6WAgAuK3Mg4ligr7AF7aP6UJhMnI31ay5uALsqnVo3ua5mq2TfYxFsPGiaJEyyFhXJZ0=
 jobs:
   include:
-    - stage: deploy gitbook
-      if: branch = master AND type = push
-      script:
-        - npm install --ignore-scripts
-        - npm run docs:build
-      deploy:
-        provider: pages
-        skip-cleanup: true
-        github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-        keep-history: true
-        local-dir: _book
-        on:
-          branch: master
+  - stage: deploy gitbook
+    if: branch = master AND type = push
+    script:
+    - npm install --ignore-scripts
+    - npm run docs:build
+    deploy:
+      provider: pages
+      skip-cleanup: true
+      github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+      keep-history: true
+      local-dir: _book
+      on:
+        branch: master
